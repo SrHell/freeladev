@@ -1,6 +1,6 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client';
-import {useLanyard, useLanyardWS} from '../src/index';
+import {useLanyard, useLanyardWS} from '../index';
 
 function App() {
 	const rest = useLanyard('216762282569498624');
