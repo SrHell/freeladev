@@ -3,17 +3,17 @@ import {createRoot} from 'react-dom/client';
 import {useLanyard, useLanyardWS} from '../src/index';
 
 function App() {
-	const rest = useLanyard('268798547439255572');
-	const socket = useLanyardWS('268798547439255572');
+	const rest = useLanyard('216762282569498624');
+	const socket = useLanyardWS('216762282569498624');
 
 	// Example showing built in request deduplication.
 	// The four requests below will only result in
 	// one request to the API. The other three will
 	// be resolved from the cache.
-	useLanyard('268798547439255572');
-	useLanyard('268798547439255572');
-	useLanyard('268798547439255572');
-	useLanyard('268798547439255572');
+	useLanyard('216762282569498624');
+	useLanyard('216762282569498624');
+	useLanyard('216762282569498624');
+	useLanyard('216762282569498624');
 
 	return (
 		<pre>
